@@ -1,0 +1,74 @@
+package jjj;
+import java.util.Arrays;
+import java.util.Scanner; 
+
+public class ddd {
+
+	public static void phone (String a )
+	{ 
+		int i=0; 
+		String b; 
+		b=a.toUpperCase(); 
+		int length =b.length();
+		char[] charArray = b.toCharArray();
+		
+		while(i<length)
+		{
+			char c = charArray [i];
+			if (c == 'A' || c== 'B' || c=='C')	
+			{
+				charArray[i]= '2'; 
+		} 
+			if (c == 'D' || c== 'E' || c=='F')	
+			{
+				charArray[i]= '3'; 
+				
+			} 
+			if (c == 'G' || c== 'H' || c=='I')	
+			{
+				charArray[i]= '4'; 
+				
+			} 
+			if (c == 'J' || c== 'K' || c=='L')	
+			{
+				charArray[i]= '5'; 
+				
+			} 
+			if (c == 'M' || c== 'N' || c=='O')	
+			{
+				charArray[i]= '6'; 
+				
+			} 
+			if (c == 'P' || c== 'R' || c=='S')	
+			{
+				charArray[i]= '7'; 
+				
+			} 
+			if (c == 'T' || c== 'U' || c=='V')	
+			{
+				charArray[i]= '8'; 
+				
+			} 
+			if (c == 'W' || c== 'X' || c=='Y')	
+			{
+				charArray[i]= '9'; 
+				
+			} 
+			
+			i++;
+		}
+		
+		System.out.println( "Here's the translate phone number: " + Arrays.toString(charArray));
+	} 
+	
+	public static void main(String[] args) {
+
+		System.out.println("This program will translate phone numbers.)");
+		             System.out.println("Please enter the phone number");
+		             Scanner in= new Scanner(System.in); 
+		         String str=in.nextLine(); 
+		      phone(str); 
+		     
+	}
+
+	}
